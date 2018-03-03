@@ -8,12 +8,14 @@ FEATUREDVIDS=(
   OYD2.m4v
 )
 
+mkdir -p instagram
+
 while true; do
 for F in "${FEATUREDVIDS[@]}"; do
   omxplayer $VIDOPTS $F
 done
 
-pushd oyd > /dev/null
+pushd instagram > /dev/null
 
 for F in `ls -1 *.mp4`; do
   omxplayer $VIDOPTS $F
