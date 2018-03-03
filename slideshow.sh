@@ -3,15 +3,10 @@
 VIDOPTS=""
 PHOTOPTS="--autozoom -F --cycle-once -D 2"
 
-FEATUREDVIDS=(
-  Videos/OYD.m4v
-  Videos/OYD2.m4v
-)
-
 mkdir -p instagram
 
 while true; do
-for F in "${FEATUREDVIDS[@]}"; do
+for F in `ls -1 Videos/*`; do
   omxplayer $VIDOPTS $F
 done
 
