@@ -13,4 +13,4 @@ for ACCOUNT in "${ACCOUNTS[@]}"; do
   instaLooter -v -N $ACCOUNT
 done
 
-popd instagram
+popd > /dev/null
