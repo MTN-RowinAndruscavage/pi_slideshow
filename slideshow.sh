@@ -4,8 +4,8 @@ VIDOPTS=""
 PHOTOPTS="--autozoom -F --cycle-once -D 2"
 
 FEATUREDVIDS=(
-  OYD.m4v
-  OYD2.m4v
+  Videos/OYD.m4v
+  Videos/OYD2.m4v
 )
 
 mkdir -p instagram
