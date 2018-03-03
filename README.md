@@ -13,28 +13,19 @@ Stock Raspbian, with video output configured and working.
 
 ## Installation:
 
+Place videos in /home/pi/Videos directory
+From /home/pi , run:
 
-    cd . # sorry, this goes right into your /home/pi directory
-
-    git clone https://github.com/MTN-RowinAndruscavage/pi_slideshow.git ./
+    git clone https://github.com/MTN-RowinAndruscavage/pi_slideshow.git
 
     # Install dependency packages
-    ./install.sh
-
-    # Boot right up to the script
-    cp -a xsession ~/.xsession
-
-    # optional to get the BSOD screen working
-    nano ~/.xsession   # edit xscreensaver -geometry to match resolution of display
-
-    # Copy any other videos you want include
-    # edit update_instagram.sh  and  slideshow.sh  to display those videos
+    sh pi_slideshow/install.sh
 
     # Download all the photos and vids from your list of instagram accounts
-    ./update_instagram.sh   # might want to add a cron job for this to update daily
+    ./pi_slideshow/update_instagram.sh   # might want to add a cron job for this to update daily
 
     # Test the script:
-    ./slideshow.sh
+    ./pi_slideshow/slideshow.sh
 
     # When done, reboot to check that it launches straight into the slideshow script.
 
