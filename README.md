@@ -34,6 +34,16 @@ From /home/pi , run:
 
     # When done, reboot to check that it launches straight into the slideshow script.
 
+## Stopping the script:
+
+Unfortunately, the video playback takes over the display.  The only way to interact with the unit is to plug in a keyboard and blindly type:
+
+    Ctrl-Alt-F1             # brings you to a text console hidden behind the video)
+    killall /bin/bash       # stop the script
+    killall omxplayer.bin   # stop any videos still running
+    
+From there, you can press Ctrl-Alt-F7 to return to the GUI, and then 'q' to quit the screensaver that might start running.
+Afterwards it'll dump you back into the normal lightdm GUI.
 
 ## TODO:
 
