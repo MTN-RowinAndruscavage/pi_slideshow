@@ -1,5 +1,7 @@
 #!/bin/sh
 
+PI_DIR=`dirname "$0"`
+
 sudo apt install \
   xscreensaver \
   xscreensaver-screensaver-bsod \
@@ -8,4 +10,5 @@ sudo apt install \
   
 sudo pip install -U instaLooter
 
-cp -a xsession $HOME/.xsession
+cp -a $PI_DIR/xsession $HOME/.xsession
+chmod 755 $HOME/.xsession
