@@ -10,6 +10,11 @@ If something exits abnormally, it'll show the BSOD screensaver until you can log
 ## Prerequisites:
 
 Stock Raspbian, with video output configured and working.
+You will want to tweak some things in the Raspberry Pi Configuration (rc_gui) :
+
+ * System | Underscan Disable
+ * Performance | GPU Memory: 128  (needed to display HD videos)
+ * Localization | (All)
 
 ## Installation:
 
