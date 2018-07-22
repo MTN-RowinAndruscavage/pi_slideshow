@@ -11,7 +11,7 @@ pushd instagram > /dev/null
 
 for ACCOUNT in "${ACCOUNTS[@]}"; do
   echo "Updating instagram/$ACCOUNT ..."
-  instaLooter -v -N $ACCOUNT
+  instalooter user $ACCOUNT -v -N
 done
 
 popd > /dev/null
