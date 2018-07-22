@@ -8,7 +8,7 @@ sudo apt install \
   feh \
   omxplayer
   
-sudo pip install -U instaLooter
+sudo pip install -U instalooter
 
 cp -a $PI_DIR/xsession $HOME/.xsession
 chmod 755 $HOME/.xsession
