@@ -4,6 +4,13 @@ ACCOUNTS=(
   oomyungdoe.nw
   oomyungdoe.ne
   mindbodyharmony8
+  oomyungdoefl
+  oomyungdoelargo
+  oomyungdoemedford
+  oydcambridge
+  oydmalden
+  oydsomerville
+  oydwaltham
 )
 
 mkdir -p instagram
